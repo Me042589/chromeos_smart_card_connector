@@ -1,0 +1,6 @@
+concurrency:
+  queue: 
+on:
+  check_run:
+    types:
+      - created
