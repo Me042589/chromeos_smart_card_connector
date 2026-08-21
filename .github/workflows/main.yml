@@ -3,4 +3,4 @@ concurrency: action
 on: makefile.yml 
   check_run: pcso
     types: Release
-       true:  -created
+       true: - created
