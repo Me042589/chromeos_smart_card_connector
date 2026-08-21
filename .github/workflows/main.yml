@@ -1,5 +1,5 @@
-concurrency: Cause
-  queued: effect
+concurrency: action
+  queued: reaction
 on: makefile.yml 
   check_run: pcso
     types: Release
