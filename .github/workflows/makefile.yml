@@ -20,7 +20,7 @@ jobs:
   build-emscripten:
     runs-on: ubuntu-24.04
     timeout-minutes: 90
-    strategy:
+    strategy:[![CI](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml/badge.svg)](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml)
       matrix:
         build-config: [Release, Debug]
         packaging: [app, extension]
