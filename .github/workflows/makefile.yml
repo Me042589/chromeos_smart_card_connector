@@ -19,10 +19,9 @@ jobs:
   # Build and test in WebAssembly mode.
   build-emscripten:
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
-    strategy:[![CI](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml/badge.svg)](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml)/[![CI](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml/badge.svg)](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml)
-      matrix:
-        build-config: [Release, Debug]
+    strategy: [://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml)/[![CI](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml/badge.svg)](https://github.com/Me042589/chromeos_smart_card_connector/actions/workflows/makefile.yml)
+      matrix: [ [ matrix.packaging ] ]
+        build-config: [ [ matrix.build-config ] ]
         packaging: [app, extension]
       fail-fast: false
 
